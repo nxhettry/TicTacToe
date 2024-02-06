@@ -15,7 +15,7 @@ body{
 }
 .heading{
     font-size: 4rem;
-    margin: 30px 50px 0 0;
+    margin: 30px auto 0;
     font-family: 'Roboto Slab', serif;
     color: #436850;   
 }
@@ -35,27 +35,68 @@ body{
 }
 .game{
     height: 57vh;
-    width: 40vw;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px 0 0 60px;
+    width: 33vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 40px auto;
     gap: 12px;
 }
 .box{
     color: black;
     font-size: 6em;
-    height: 11rem;
-    width: 11rem;
     background-color: #FBFADA;
     border-radius: 12px;
     border: none;
 }
 .rstBtn{
     padding: 12px;
-    margin: 50px 50px 0 0;
+    margin: 20px auto;
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     border-radius: 12px;
+}
+@media (max-width: 375px) {
+.game{
+    height: 50vh;
+    width: 80vw;
+    margin: 40px auto;
+}
+.rstBtn{
+    margin: 0 auto 50px;
+}
+.heading{
+    margin: 30px auto 0;
+    font-size: 3rem;
+}
+
+}
+@media (max-width: 1200px){
+    .heading{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 1000px){
+    .heading{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 800px){
+    .heading{
+        font-size: 2rem;
+    }
+    .rstBtn{
+        margin: 0 auto 50px;
+    }
+}
+@media (max-width: 450px){
+    .game{
+        height: 36vh;
+        width: 75vw;
+    }
+    .rstBtn{
+        font-size: 1.5rem;
+    }
 }
