@@ -21,14 +21,14 @@ body{
 }
 .title{
     font-size: 4rem;
-    margin: 30px 50px 0 0;
+    margin: 30px auto 0;
     font-family: 'Roboto Slab', serif;
     color: white;
     box-shadow: 10x 1px white;
 }
 .result{
     font-size: 4rem;
-    margin: 30px 50px 0 0;
+    margin: 30px auto 0;
     font-family: 'Roboto Slab', serif;
     color: red;
     box-shadow: 10x 1px white;
