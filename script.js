@@ -13,6 +13,7 @@ const winCase = [
     [0, 4, 8],
     [2, 4, 6],
 ];
+//mouseover
 title.addEventListener("mouseover", () => {
     title.classList.add("title");
     title.classList.remove("heading");
